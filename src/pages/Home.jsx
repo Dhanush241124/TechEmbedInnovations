@@ -9,7 +9,7 @@ export default function Home() {
             <div className="hero-icon mb-4">
               <i className="fas fa-brain neon-icon"></i>
             </div>
-            <h1 className="display-3 fw-bold neon-text mb-3 animate-fade-in">TechEmbed Innovations</h1>
+            <h1 className="display-3 fw-bold neon-text mb-3 animate-fade-in">TechEmbed Innovation</h1>
             <p className="lead text-light mb-4 animate-fade-in">Innovating Intelligence. Empowering Future.</p>
             <p className="h5 text-light mb-5 animate-fade-in">Leading Provider of IT Solutions, AI Training, and Full-Stack Development</p>
             <div className="hero-buttons mt-5">

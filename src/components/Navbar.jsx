@@ -41,7 +41,7 @@ export default function Navbar() {
               fontWeight: 800,
             }}
           >
-            TechEmbed Innovations
+            TechEmbed Innovation
           </span>
         </NavLink>
         <button

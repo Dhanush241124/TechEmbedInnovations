@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="container py-5">
       <section className="mb-5 mt-5">
-        <h1 className="display-4 neon-text mb-3">About TechEmbed Innovations</h1>
+        <h1 className="display-4 neon-text mb-3">About TechEmbed Innovation</h1>
         <p className="lead text-light">Transforming Careers Through Technology Excellence</p>
       </section>
 
@@ -13,7 +13,7 @@ export default function About() {
           <div className="col-lg-8">
             <div className="neon-card">
               <h3 className="neon-text mb-4"><i className="fas fa-building"></i> Who We Are</h3>
-              <p className="text-light mb-3">TechEmbed Innovations Private Limited is a premier IT solutions company specializing in Artificial Intelligence, Full-Stack Development, and Embedded Systems. We bridge the gap between academic learning and industry requirements through practical training, internships, and real-world project experience.</p>
+              <p className="text-light mb-3">TechEmbed Innovation Private Limited is a premier IT solutions company specializing in Artificial Intelligence, Full-Stack Development, and Embedded Systems. We bridge the gap between academic learning and industry requirements through practical training, internships, and real-world project experience.</p>
               <p className="text-light mb-3">Founded by industry experts Darshan and Dhanush, we empower the next generation of tech professionals through comprehensive training programs, corporate solutions, and cutting-edge AI product development services.</p>
               <p className="text-light"><strong className="text-neon">Domain Expertise:</strong> IT Software, AI/ML, Full-Stack Development, Embedded Systems, IoT, Cloud & DevOps, Corporate IT Solutions</p>
             </div>
