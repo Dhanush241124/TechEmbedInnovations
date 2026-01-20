@@ -175,14 +175,6 @@ export default function Navbar() {
               </>
             )}
           </NavLink>
-          {/* <li className="nav-item d-flex align-items-center">
-            <div className="theme-switch-wrapper" title={lightMode ? 'Switch to dark' : 'Switch to light'}>
-              <label className="theme-switch">
-                <input type="checkbox" checked={lightMode} onChange={toggleTheme} aria-label="Toggle light theme" />
-                <span className="slider round"></span>
-              </label>
-            </div>
-          </li> */}
         </nav>
       </div>
     </header>

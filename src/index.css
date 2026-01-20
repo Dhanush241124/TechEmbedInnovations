@@ -116,6 +116,7 @@ body::before {
 }
 .neon-text { 
   background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple)); 
+  background-clip: text;
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
   animation: fadeInUp 0.8s ease 0.2s both;
@@ -168,6 +169,7 @@ body::before {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeInUp 0.8s ease both;
@@ -629,15 +631,6 @@ footer{ padding:18px 12px; }
     background: rgba(102, 126, 234, 0.2);
     color: var(--neon-blue);
     border-left-color: var(--neon-blue);
-  }
-    align-items: center;
-    transition: all 200ms ease;
-  }
-  
-  .nav-links a:hover,
-  .nav-links .nav-item:hover {
-    background: rgba(102, 126, 234, 0.1);
-    padding-left: 24px;
   }
   
   .nav-links a.active {
