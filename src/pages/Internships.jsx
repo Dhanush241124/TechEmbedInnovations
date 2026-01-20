@@ -4,7 +4,7 @@ export default function Internships(){
   return (
     <div className="container py-5">
       <section className="mb-5 mt-5">
-        <h1 className="display-4 neon-text mb-3">Internship Programs</h1>
+        <h1 className="display-4 neon-text mb-3"><strong>Internship Programs</strong></h1>
         <p className="lead text-muted">Gain Real-World Experience with Industry Mentors</p>
       </section>
 
@@ -141,7 +141,7 @@ export default function Internships(){
               <p className="text-light mb-3"><strong>Mode:</strong> Online & Offline</p>
               <p className="text-light mb-3"><strong>Selection:</strong> Continuous rolling basis</p>
               <hr className="neon-hr my-3" />
-              <p className="text-light mb-2"><i className="fas fa-envelope text-neon"></i> <a href="mailto:techembedinnovations@gmail.com" className="text-neon">techembedinnovations@gmail.com</a></p>
+              <p className="text-light mb-2"><i className="fas fa-envelope text-neon"></i> <a href="mailto:info@techembedinnovation.in  " className="text-neon">info@techembedinnovation.in  </a></p>
               <p className="text-light mb-2"><i className="fas fa-phone text-neon"></i> <a href="tel:+919008405328" className="text-neon">+91 9008405328</a></p>
               <p className="text-light small">Applications are reviewed on a rolling basis. We notify selected candidates within 5-7 business days.</p>
             </div>

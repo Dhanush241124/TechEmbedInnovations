@@ -32,8 +32,11 @@ export default function Contact(){
 
   return (
     <div className="container py-5">
-      <section className="mb-5 mt-5">
-        <h1 className="display-4 neon-text mb-3">Get In Touch</h1>
+      <section className="mb-5 mt-5 text-center">
+        <div className="hero-icon mb-4">
+          <i className="fas fa-brain neon-icon"></i>
+        </div>
+        <h1 className="display-4 neon-text mb-3"><strong>Get In Touch</strong></h1>
         <p className="lead text-light">We'd Love to Hear From You</p>
       </section>
 
@@ -75,19 +78,20 @@ export default function Contact(){
           </div>
 
           <div className="col-lg-4">
-            <div className="neon-card mb-4">
+            <div className="neon-card">
               <h5 className="neon-text mb-4"><i className="fas fa-info-circle"></i> Contact Information</h5>
+              
               <div className="contact-item mb-4">
                 <h6 className="neon-text mb-2"><i className="fas fa-envelope"></i> Email</h6>
-                <p className="text-light">
-                  <a href="mailto:techembedinnovations@gmail.com" className="text-neon">techembedinnovations@gmail.com</a>
+                <p className="text-light mb-1">
+                  <a href="mailto:info@techembedinnovation.in  " className="text-neon">info@techembedinnovation.in  </a>
                 </p>
                 <p className="text-light small">We'll respond within 24 hours</p>
               </div>
 
               <div className="contact-item mb-4">
                 <h6 className="neon-text mb-2"><i className="fas fa-phone"></i> Phone</h6>
-                <p className="text-light">
+                <p className="text-light mb-1">
                   <a href="tel:+919008405328" className="text-neon">+91 9008405328</a><br />
                   <a href="tel:+919986967709" className="text-neon">+91 9986967709</a>
                 </p>
@@ -96,7 +100,7 @@ export default function Contact(){
 
               <div className="contact-item mb-4">
                 <h6 className="neon-text mb-2"><i className="fas fa-map-marker-alt"></i> Location</h6>
-                <p className="text-light">India</p>
+                <p className="text-light mb-1"><strong>India</strong></p>
                 <p className="text-light small">Currently operating across India with online classes</p>
               </div>
             </div>

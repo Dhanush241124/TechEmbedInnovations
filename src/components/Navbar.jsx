@@ -21,29 +21,40 @@ export default function Navbar() {
     }
   },[lightMode]);
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      const nav = document.querySelector('.nav-links');
+      const hamburger = document.querySelector('.hamburger');
+      if (nav && !nav.contains(e.target) && !hamburger.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+    
+    if (menuOpen) {
+      document.addEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'hidden';
+    }
+    
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'auto';
+    };
+  }, [menuOpen]);
+
   const toggleTheme = () => setLightMode(v=>!v);
 
   const closeMenu = () => setMenuOpen(false);
 
   return (
     <header className="navbar neon-border-bottom">
+      {/* Mobile menu overlay */}
+      <div 
+        className={`nav-overlay ${menuOpen ? 'open' : ''}`}
+        onClick={() => setMenuOpen(false)}
+      />
+      
       <div className="container d-flex justify-content-between align-items-center">
-        <NavLink to="/" className="navbar-brand hover-neon d-flex align-items-center">
-          <img
-            src="/images/darshanlog.jpg"
-            alt="TechEmbed Logo"
-            className="brand-logo"
-          />
-          <span
-            style={{
-              fontSize: "1.2rem",
-              letterSpacing: "1px",
-              fontWeight: 800,
-            }}
-          >
-            TechEmbed Innovation
-          </span>
-        </NavLink>
         <button
           className={`hamburger ${menuOpen ? 'is-active' : ''}`}
           aria-label="Toggle navigation"
@@ -55,6 +66,23 @@ export default function Navbar() {
           <span className="bar" />
         </button>
 
+        <NavLink to="/" className="navbar-brand hover-neon d-flex align-items-center">
+          <img
+            src="/images/darshanlog.png"
+            alt="TechEmbed Logo"
+            className="brand-logo"
+          />
+          <span
+            style={{
+              fontSize: "1.2rem",
+              letterSpacing: "1px",
+              fontWeight: 800,
+              color: "#ffffff",
+            }}
+          >
+            TechEmbed Innovation
+          </span>
+        </NavLink>
         <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <NavLink
             to="/"
@@ -63,7 +91,11 @@ export default function Navbar() {
               isActive ? "me-3 hover-neon active" : "me-3 hover-neon"
             }
           >
-            Home
+            {({ isActive }) => (
+              <>
+                Home {isActive && <span className="nav-active-icon">✓</span>}
+              </>
+            )}
           </NavLink>
           <NavLink
             to="/about"
@@ -72,7 +104,11 @@ export default function Navbar() {
               isActive ? "me-3 hover-neon active" : "me-3 hover-neon"
             }
           >
-            About
+            {({ isActive }) => (
+              <>
+                About {isActive && <span className="nav-active-icon">✓</span>}
+              </>
+            )}
           </NavLink>
           <NavLink
             to="/services"
@@ -81,7 +117,11 @@ export default function Navbar() {
               isActive ? "me-3 hover-neon active" : "me-3 hover-neon"
             }
           >
-            Services
+            {({ isActive }) => (
+              <>
+                Services {isActive && <span className="nav-active-icon">✓</span>}
+              </>
+            )}
           </NavLink>
           <NavLink
             to="/internships"
@@ -90,7 +130,11 @@ export default function Navbar() {
               isActive ? "me-3 hover-neon active" : "me-3 hover-neon"
             }
           >
-            Internships
+            {({ isActive }) => (
+              <>
+                Internships {isActive && <span className="nav-active-icon">✓</span>}
+              </>
+            )}
           </NavLink>
           <NavLink
             to="/projects"
@@ -99,7 +143,11 @@ export default function Navbar() {
               isActive ? "me-3 hover-neon active" : "me-3 hover-neon"
             }
           >
-            Projects
+            {({ isActive }) => (
+              <>
+                Projects {isActive && <span className="nav-active-icon">✓</span>}
+              </>
+            )}
           </NavLink>
           <NavLink
             to="/workshops"
@@ -108,7 +156,11 @@ export default function Navbar() {
               isActive ? "me-3 hover-neon active" : "me-3 hover-neon"
             }
           >
-            Workshops
+            {({ isActive }) => (
+              <>
+                Workshops {isActive && <span className="nav-active-icon">✓</span>}
+              </>
+            )}
           </NavLink>
           <NavLink
             to="/contact"
@@ -117,16 +169,20 @@ export default function Navbar() {
               isActive ? "hover-neon active" : "hover-neon"
             }
           >
-            Contact
+            {({ isActive }) => (
+              <>
+                Contact {isActive && <span className="nav-active-icon">✓</span>}
+              </>
+            )}
           </NavLink>
-            <li className="nav-item d-flex align-items-center">
-              <div className="theme-switch-wrapper" title={lightMode ? 'Switch to dark' : 'Switch to light'}>
-                <label className="theme-switch">
-                  <input type="checkbox" checked={lightMode} onChange={toggleTheme} aria-label="Toggle light theme" />
-                  <span className="slider round"></span>
-                </label>
-              </div>
-            </li>
+          {/* <li className="nav-item d-flex align-items-center">
+            <div className="theme-switch-wrapper" title={lightMode ? 'Switch to dark' : 'Switch to light'}>
+              <label className="theme-switch">
+                <input type="checkbox" checked={lightMode} onChange={toggleTheme} aria-label="Toggle light theme" />
+                <span className="slider round"></span>
+              </label>
+            </div>
+          </li> */}
         </nav>
       </div>
     </header>

@@ -4,7 +4,7 @@ export default function Services(){
   return (
     <div className="container py-5">
       <section className="mb-5 mt-5">
-        <h1 className="display-4 neon-text mb-3">Our Services</h1>
+        <h1 className="display-4 neon-text mb-3"><strong>Our Services</strong></h1>
         <p className="lead text-light">Comprehensive Solutions for Your Technology Needs</p>
       </section>
 
@@ -110,7 +110,7 @@ export default function Services(){
 
       <section className="py-5 cta-section text-center mt-5">
         <h2 className="neon-text mb-4">Ready to Get Started?</h2>
-        <p className="lead text-light mb-4">Contact us: <a href="mailto:techembedinnovations@gmail.com" className="text-neon">techembedinnovations@gmail.com</a> | <a href="tel:+919008405328" className="text-neon">+91 9008405328</a></p>
+        <p className="lead text-light mb-4">Contact us: <a href="mailto:info@techembedinnovation.in  " className="text-neon">info@techembedinnovation.in  </a> | <a href="tel:+919008405328" className="text-neon">+91 9008405328</a></p>
         <div>
           <a href="/internships" className="btn btn-lg btn-neon me-3">
             <i className="fas fa-graduation-cap"></i> Apply for Internship

@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="container py-5">
       <section className="mb-5 mt-5">
-        <h1 className="display-4 neon-text mb-3">About TechEmbed Innovation</h1>
+        <h1 className="display-4 neon-text mb-3"><strong>About TechEmbed Innovation</strong></h1>
         <p className="lead text-light">Transforming Careers Through Technology Excellence</p>
       </section>
 
@@ -84,25 +84,27 @@ export default function About() {
       <section className="mb-5">
         <h2 className="section-title neon-text mb-5">Contact Us</h2>
         <div className="row g-4">
-          <div className="col-md-4">
-            <div className="neon-card text-center h-100">
-              <div className="card-icon"><i className="fas fa-envelope"></i></div>
+          <div className="col-md-6">
+            <div className="neon-card">
+              <h5 className="neon-text mb-3"><i className="fas fa-building"></i> HQ</h5>
+              <p className="text-light"><strong>Bengaluru</strong><br/>
+              <small>Our headquarters location</small></p>
+              <p className="text-light"><i className="fas fa-phone me-2"></i><a href="tel:+919008405328" className="text-neon">+91 9008405328</a></p>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="neon-card">
+              <h5 className="neon-text mb-3"><i className="fas fa-map-marker-alt"></i> CO</h5>
+              <p className="text-light"><strong> Mysuru</strong><br/>
+              <small>Our corporate office</small></p>
+              <p className="text-light"><i className="fas fa-phone me-2"></i><a href="tel:+919986967709" className="text-neon">+91 9986967709</a></p>
+            </div>
+          </div>
+          <div className="col-md-12">
+            <div className="neon-card text-center">
+              <div className="card-icon mb-3"><i className="fas fa-envelope"></i></div>
               <h5 className="neon-text mb-3">Email</h5>
-              <p className="text-light"><a href="mailto:techembedinnovations@gmail.com" className="text-neon">techembedinnovations@gmail.com</a></p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="neon-card text-center h-100">
-              <div className="card-icon"><i className="fas fa-phone"></i></div>
-              <h5 className="neon-text mb-3">Phone</h5>
-              <p className="text-light"><a href="tel:+919008405328" className="text-neon">+91 9008405328</a><br/><a href="tel:+919986967709" className="text-neon">+91 9986967709</a></p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="neon-card text-center h-100">
-              <div className="card-icon"><i className="fas fa-map-marker-alt"></i></div>
-              <h5 className="neon-text mb-3">Location</h5>
-              <p className="text-light">India<br/><small>Online & Offline</small></p>
+              <p className="text-light"><a href="mailto:info@techembedinnovation.in  " className="text-neon">info@techembedinnovation.in  </a></p>
             </div>
           </div>
         </div>

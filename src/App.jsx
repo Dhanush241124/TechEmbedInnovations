@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Internships from './pages/Internships'
 import Projects from './pages/Projects'
+import ProjectDetail from './pages/ProjectDetail'
 import Workshops from './pages/Workshops'
 import NotFound from './pages/NotFound'
 import Error500 from './pages/Error500'
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/internships" element={<Internships />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="/workshops" element={<Workshops />} />
           <Route path="/500" element={<Error500 />} />
           <Route path="*" element={<NotFound />} />

@@ -36,7 +36,7 @@ export default function SchemaMarkup() {
       '@type': 'ContactPoint',
       'contactType': 'Customer Support',
       'telephone': '+919008405328',
-      'email': 'techembedinnovations@gmail.com'
+      'email': 'info@techembedinnovation.in  '
     },
     'address': {
       '@type': 'PostalAddress',
@@ -62,7 +62,7 @@ export default function SchemaMarkup() {
       'addressCountry': 'IN'
     },
     'telephone': '+919008405328',
-    'email': 'techembedinnovations@gmail.com',
+    'email': 'info@techembedinnovation.in  ',
     'url': 'https://techembedinnovation.in'
   }
 

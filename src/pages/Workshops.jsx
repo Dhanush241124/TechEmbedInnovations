@@ -4,7 +4,7 @@ export default function Workshops(){
   return (
     <div className="container py-5">
       <section className="mb-5 mt-5">
-        <h1 className="display-4 neon-text mb-3">Intensive Workshops</h1>
+        <h1 className="display-4 neon-text mb-3"><strong>Intensive Workshops</strong></h1>
         <p className="lead text-light">Accelerate Your Learning with Expert-Led Bootcamps</p>
       </section>
 
@@ -82,7 +82,7 @@ export default function Workshops(){
       <section className="mb-5">
         <div className="neon-card text-center">
           <h4 className="neon-text mb-3">Have Questions? Contact Us!</h4>
-          <p className="text-light mb-2"><i className="fas fa-envelope"></i> <a href="mailto:techembedinnovations@gmail.com" className="text-neon">techembedinnovations@gmail.com</a></p>
+          <p className="text-light mb-2"><i className="fas fa-envelope"></i> <a href="mailto:info@techembedinnovation.in  " className="text-neon">info@techembedinnovation.in  </a></p>
           <p className="text-light"><i className="fas fa-phone"></i> <a href="tel:+919008405328" className="text-neon">+91 9008405328</a> / <a href="tel:+919986967709" className="text-neon">+91 9986967709</a></p>
         </div>
       </section>

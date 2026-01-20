@@ -1,8 +1,44 @@
 import React from 'react'
+import SEOHead from '../components/SEOHead'
 
 export default function Home() {
+  // Schema markup for Organization
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TechEmbed Innovation",
+    "url": "https://techembedinnovation.in",
+    "logo": "https://techembedinnovation.in/public/images/favicon.svg",
+    "description": "TechEmbed Innovation - Leading provider of IT solutions, AI training, and full-stack development",
+    "sameAs": [
+      "https://www.instagram.com/techembed",
+      "https://www.facebook.com/techembed"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-9008405328",
+      "contactType": "Customer Service",
+      "email": "techembedinnovations@gmail.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN",
+      "addressRegion": "Karnataka",
+      "streetAddress": "Hassan, Bengaluru"
+    }
+  }
+
   return (
     <div>
+      <SEOHead 
+        title="Home" 
+        description="TechEmbed Innovation - Leading provider of IT solutions, AI training, full-stack development, and embedded systems. Expert-led training programs for students and professionals."
+        keywords="AI training, machine learning, full-stack development, embedded systems, IT solutions, internships, workshops, coding bootcamp"
+        ogUrl="https://techembedinnovation.in"
+      />
+      <script type="application/ld+json">
+        {JSON.stringify(schemaMarkup)}
+      </script>
       <section className="hero-section py-5 mt-5">
         <div className="container text-center">
           <div className="hero-content mb-5">
@@ -12,8 +48,8 @@ export default function Home() {
             <h1 className="display-3 fw-bold neon-text mb-3 animate-fade-in">TechEmbed Innovation</h1>
             <p className="lead text-light mb-4 animate-fade-in">Innovating Intelligence. Empowering Future.</p>
             <p className="h5 text-light mb-5 animate-fade-in">Leading Provider of IT Solutions, AI Training, and Full-Stack Development</p>
-            <div className="hero-buttons mt-5">
-              <a href="/services" className="btn btn-lg btn-neon me-3"> <i className="fas fa-rocket"></i> Explore Programs</a>
+            <div className="hero-buttons mt-5 d-flex flex-wrap gap-3 justify-content-center">
+              <a href="/services" className="btn btn-lg btn-neon"> <i className="fas fa-rocket"></i> Explore Programs</a>
               <a href="/contact" className="btn btn-lg btn-neon-outline"> <i className="fas fa-envelope"></i> Contact Us</a>
             </div>
           </div>
