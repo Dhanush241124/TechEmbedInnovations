@@ -5,7 +5,7 @@ export default function Internships(){
     <div className="container py-5">
       <section className="mb-5 mt-5">
         <h1 className="display-4 neon-text mb-3"><strong>Internship Programs</strong></h1>
-        <p className="lead text-muted">Gain Real-World Experience with Industry Mentors</p>
+        <p className="lead text-light">Gain Real-World Experience with Industry Mentors</p>
       </section>
 
       <section className="mb-5">
