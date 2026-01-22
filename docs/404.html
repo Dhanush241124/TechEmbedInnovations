@@ -1,0 +1,13 @@
+@"
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script>
+    var path = location.pathname;
+    location.replace(location.origin + '/#' + path);
+  </script>
+</head>
+<body></body>
+</html>
+"@ | Out-File docs\404.html -Encoding utf8
